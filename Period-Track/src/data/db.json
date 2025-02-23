@@ -1,0 +1,60 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/247/large_79da5edd93b39e9a59fccbabd1f21032.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/244/large_71a53ec3dd63ffa1a3f906332dfc9a36.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/246/large_347811d37fb5f95bba97a909522c0aeb.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/237/large_99efb4a0449f950cda20ec5bddc93267.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/239/large_52f64c105935c75881ac2b956098df12.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/212/large_4d5ffb55cd4aa7141ea16ec13322e937.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/229/large_5927084dc3c43c34c07920bf52157606.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Searching For Her",
+      "author": "Jackson Clear",
+      "categories": ["love", "drama"],
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/242/large_94f20234909a9edf1b11d7757aab2a44.jpg"
+    }
+  ]
+}

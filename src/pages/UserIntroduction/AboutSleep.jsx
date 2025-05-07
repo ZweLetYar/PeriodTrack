@@ -119,6 +119,7 @@ export default function AboutSleep() {
           </div>
 
           <button
+            disabled={!selected.length}
             className={`rounded-full py-4  cursor-pointer text-center ${
               selected.length
                 ? "bg-pink-500 text-white"

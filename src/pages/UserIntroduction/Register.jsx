@@ -31,6 +31,7 @@ export default function Naming() {
         />
       </div>
       <button
+        disabled={!data.email || !data.password}
         className={`rounded-full py-4 px-30 text-center ${
           data.email && data.password
             ? "bg-pink-500 text-white"

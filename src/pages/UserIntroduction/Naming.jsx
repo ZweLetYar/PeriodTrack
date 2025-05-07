@@ -27,6 +27,7 @@ export default function Naming() {
         </div>
       </div>
       <button
+        disabled={!data.name}
         className={`rounded-full py-4 px-27  text-center ${
           data.name
             ? "bg-pink-500 text-white"

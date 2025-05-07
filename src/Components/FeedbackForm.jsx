@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Star } from "lucide-react";
 import { addCollection } from "../hooks/useFireStore";
+import { AuthContext } from "../Context/AuthContext";
 
 export default function FeedbackForm() {
   const [rating, setRating] = useState(0);
@@ -8,9 +9,12 @@ export default function FeedbackForm() {
   const [comment, setComment] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  let { user } = useContext(AuthContext);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     let data = {
+      userID: user.uid,
       rating,
       comment,
     };
@@ -21,7 +25,9 @@ export default function FeedbackForm() {
 
   return (
     <div className="max-w-md  flex flex-col items-center mx-auto p-6 bg-white rounded-2xl shadow-lg ">
-      <h2 className="text-xl font-semibold mb-4">Your Feedback</h2>
+      <h2 className="text-xl font-semibold mb-4">
+        Tell your experience about this App.
+      </h2>
 
       {submitted ? (
         <p className="text-green-600">Thank you for your feedback!</p>
@@ -66,7 +72,7 @@ export default function FeedbackForm() {
                 : "bg-pink-600 text-white"
             }`}
           >
-            Submit Feedback
+            Send
           </button>
         </form>
       )}

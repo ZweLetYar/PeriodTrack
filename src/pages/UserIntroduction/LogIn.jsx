@@ -47,6 +47,7 @@ export default function Naming() {
         {error && <p className="text-red-500 text-xs italic mt-3">{error}</p>}
       </div>
       <button
+        disabled={!email || !password}
         className={`rounded-full py-4 px-27  text-center ${
           email && password
             ? "bg-pink-500 text-white"

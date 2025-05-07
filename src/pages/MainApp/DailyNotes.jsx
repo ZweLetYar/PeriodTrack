@@ -23,6 +23,10 @@ export default function DailyNotes() {
 
   let addNote = async (e) => {
     e.preventDefault();
+    if (!noteBody) {
+      window.alert("Please Write Some Notes!");
+      return;
+    }
 
     let data = {
       datenote: selectedDate,

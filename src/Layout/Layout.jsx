@@ -3,10 +3,14 @@ import Navbar from "../Components/Navbar";
 import InnerNavbar from "../Components/InnerNavbar";
 import { AuthContext } from "../Context/AuthContext";
 import { ThemeContext } from "../Context/ThemeContext";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
+import { useLocation } from "react-router-dom";
+import "./style.css";
 
 export default function Layout({ children }) {
   let { user } = useContext(AuthContext);
   let { isDark } = useContext(ThemeContext);
+  let location = useLocation();
   return (
     <div
       className={` ${
@@ -16,7 +20,11 @@ export default function Layout({ children }) {
       }`}
     >
       {!user ? <Navbar /> : <InnerNavbar />}
-      <main>{children}</main>
+      <SwitchTransition>
+        <CSSTransition timeout={200} classNames="fade" key={location.pathname}>
+          <main>{children}</main>
+        </CSSTransition>
+      </SwitchTransition>
     </div>
   );
 }
